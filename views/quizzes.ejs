@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+<h1>Quizzes</h1>
+    <h2>Lista de Quizzes:</h2>
+    <ul>
+    <% for (let i in quizzes) {%>
+    <% let quiz = quizzes[i];%>
+    <li>
+        <%= quiz.question%> : <%=quiz.answer%>
+    </li>
+    <%}%>
+    </ul>
+  </body>
+</html>
